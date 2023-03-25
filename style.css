@@ -1,0 +1,270 @@
+@import "src/BaseStyleRemover.css";
+.home .container-text, .home .container, .header .container {
+  border: 0px solid #000;
+}
+
+body {
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+}
+
+.header__wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  transition: all 0.55s ease;
+}
+
+.header {
+  color: #e8e8e8;
+  width: 100%;
+}
+.header .container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .wrapper {
+  flex: 1 0 600px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header .container .logo {
+  background: url("src/male.svg") 0 0/cover no-repeat;
+  width: 85px;
+  height: 85px;
+  position: relative;
+  transition: all 0.55s ease;
+}
+.header .container .logo:hover {
+  opacity: 0.8;
+}
+.header .container .logo:before {
+  content: "";
+  background: url("src/sigmaicon.svg") 0 0/cover no-repeat;
+  width: 27px;
+  height: 35px;
+  top: 34px;
+  left: 18px;
+  position: absolute;
+}
+.header .container .flex-bar {
+  display: flex;
+  font-size: 1.55em;
+  gap: 25px;
+}
+.header .container .flex-bar a {
+  display: block;
+  transition: all 0.55s ease;
+  text-shadow: 1px 1px 3px #1D101B;
+}
+.header .container .flex-bar a:hover {
+  transform: scale(1.08);
+  text-shadow: 1px 1px 5px #1D101B;
+}
+.header .container .header__button {
+  font-size: 1.6em;
+  border-radius: 10px;
+  padding: 5px 8px;
+  float: right;
+  box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.77);
+  background: #e8e8e8;
+  transition: all 0.55s ease;
+}
+.header .container .header__button:hover {
+  background: rgba(0, 0, 0, 0.77);
+  transform: scale(1.05);
+  color: #e8e8e8;
+}
+
+.active-header {
+  background: black;
+  box-shadow: 0 10px 40px black;
+}
+.block {
+  height: 100vh;
+}
+
+.home {
+  background: hsl(304, 28%, 53%);
+  background: linear-gradient(45deg, hsl(304, 28%, 53%) 0%, hsl(348, 96%, 45%) 0%, hsl(320, 57%, 25%) 100%);
+  background: -moz-linear-gradient(45deg, hsl(304, 28%, 53%) 0%, hsl(348, 96%, 45%) 0%, hsl(320, 57%, 25%) 100%);
+  background: -webkit-linear-gradient(45deg, hsl(304, 28%, 53%) 0%, hsl(348, 96%, 45%) 0%, hsl(320, 57%, 25%) 100%);
+  color: #EDCDC7;
+  font-size: 30px;
+  padding: 140px 0;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: inset 0 20px 80px rgb(0, 0, 0);
+}
+.home .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.home .container .flex-container:nth-child(1) {
+  font-size: 3em;
+  flex: 0 0 750px;
+  text-shadow: 1px 1px 3px #1D101B;
+}
+.home .container .flex-container:nth-child(1) span {
+  color: #1D101B;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #EDCDC7;
+}
+.home .container .flex-container:nth-child(2) {
+  background: url("src/bateman.png") 0 0/cover no-repeat;
+  width: 450px;
+  height: 450px;
+}
+.home .container-text {
+  max-width: 600px;
+  margin: 40px 0 0 0;
+  border-radius: 10px;
+  padding: 15px;
+  background: rgba(29, 16, 27, 0.13);
+  box-shadow: 1px 1px 3px rgba(29, 16, 27, 0.13);
+}
+.home .container-text p {
+  line-height: 35px;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+.home .flex__explore {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+}
+.home .explore {
+  font-size: 3em;
+  text-shadow: 1px 1px 4px #1D101B;
+}
+.home .arrow-container {
+  padding: 0 20px;
+}
+.home .arrow-container .arrow {
+  background: url("src/arrow.svg") 0 50%/cover no-repeat, url("src/arrow__black.svg") 1px 45%/cover no-repeat;
+  width: 200px;
+  height: 120px;
+  transition: all 0.55s ease;
+}
+.home .arrow-container:hover .arrow {
+  transform: scale(1.08, 1.08) translate(20px, 0);
+}
+
+.definition {
+  background: hsl(0, 2%, 79%);
+  background: linear-gradient(0deg, hsl(0, 2%, 79%) 0%, hsl(62, 48%, 87%) 100%);
+  background: -moz-linear-gradient(0deg, hsl(0, 2%, 79%) 0%, hsl(62, 48%, 87%) 100%);
+  background: -webkit-linear-gradient(0deg, hsl(0, 2%, 79%) 0%, hsl(62, 48%, 87%) 100%);
+  padding: 100px 0 0 0;
+}
+.definition .container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.definition .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.definition .flex-container .flex-item:nth-child(1) {
+  height: 600px;
+  flex: 1 0 450px;
+  font-size: 1.2em;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.definition .flex-container .flex-item:nth-child(1) h1 {
+  font-size: 2.9em;
+  position: relative;
+  bottom: 10px;
+  color: #D7332F;
+  text-shadow: 1px 1px 5px black;
+}
+.definition .flex-container .flex-item:nth-child(1) h1 span {
+  font-weight: 700;
+}
+.definition .flex-container .flex-item:nth-child(1) ul li {
+  position: absolute;
+  margin: 0 0 20px 0;
+  width: 400px;
+  text-align: center;
+  height: 200px;
+  border-radius: 20px;
+  color: black;
+  font-size: 25px;
+  padding: 5px;
+}
+.definition .flex-container .flex-item:nth-child(1) ul li div {
+  background: hsl(0, 2%, 79%);
+  background: linear-gradient(0deg, hsl(0, 2%, 79%) 0%, hsl(62, 48%, 87%) 100%);
+  background: -moz-linear-gradient(0deg, hsl(0, 2%, 79%) 0%, hsl(62, 48%, 87%) 100%);
+  background: -webkit-linear-gradient(0deg, hsl(0, 2%, 79%) 0%, hsl(62, 48%, 87%) 100%);
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  border-radius: inherit;
+  transition: all 0.55s ease;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 0 3px black;
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(1) {
+  top: 30px;
+  left: 30px;
+  transform: rotate(-5deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(1):hover div:nth-child(1) {
+  transform: translate(-25px, -45px) rotate(-4deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(1):hover div:nth-child(2) {
+  transform: translate(-5px, 120px) rotate(8deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(1) div:nth-child(1) {
+  background: url("src/bohdan/bohdan1.jpg") 80% 50%/cover no-repeat;
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(2) {
+  top: 30px;
+  left: 450px;
+  transform: rotate(7deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(2):hover div:nth-child(1) {
+  transform: translate(25px, -45px) rotate(4deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(2):hover div:nth-child(2) {
+  transform: translate(5px, 120px) rotate(-10deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(2) div:nth-child(1) {
+  background: url("src/bohdan/bohdan2.jpg") 80% 50%/cover no-repeat;
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:nth-child(3) {
+  top: 380px;
+  left: 240px;
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:hover div:nth-child(1) {
+  transform: translate(150px, -10px) rotate(4deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li:hover div:nth-child(2) {
+  transform: translate(-150px, 10px) rotate(-8deg);
+}
+.definition .flex-container .flex-item:nth-child(1) ul li div:nth-child(1) {
+  background: url("src/bohdan/bohdan3.jpg") 80% 50%/cover no-repeat;
+}
+.definition .flex-container .flex-item:nth-child(2) {
+  background: url("src/drive_pic.png") 50% 0/cover no-repeat;
+  width: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */
